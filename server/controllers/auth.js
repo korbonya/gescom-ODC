@@ -28,7 +28,7 @@ export const login = async(req, res ) => {
                     email, 
                     id: user._id
                 }, process.env.SECRET_KEY)
-                res.status(200).json(user)
+                res.status(200).json(user, token)
             }else{
                 res.status(400).json({message: 'Invalid credentials'})
             }
