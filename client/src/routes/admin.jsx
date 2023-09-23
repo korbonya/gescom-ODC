@@ -1,9 +1,9 @@
-
+import Sidebar from "../components/sidebar";
 export default function Admin() {
   return (
-    <div>
-        <div>
-            sidebar
+    <div className="flex">
+        <div className="w-56 min-h-screen bg-gray-700">
+            <Sidebar />
         </div>
         <div>
             page
